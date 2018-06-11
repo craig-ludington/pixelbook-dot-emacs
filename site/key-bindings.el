@@ -24,14 +24,13 @@
 (global-set-key (kbd "C-M-r")         'isearch-backward)
 (global-set-key (kbd "C-x C-b")       'helm-buffers-list)
 (global-set-key (kbd "C-x SPC")       'just-one-space)
-(global-set-key (kbd "<C-delete>")    (i-lambda (kill-buffer nil))) ;; C-M-Backspace
 
 ;; I don't use digit-argument
 (global-set-key (kbd "C-0")         'delete-window)
 (global-set-key (kbd "C-1")         'delete-other-windows)
 (global-set-key (kbd "C-2")         'split-window-vertically)
 (global-set-key (kbd "C-3")         'split-window-horizontally)
-
+(global-set-key (kbd "M-0")         (i-lambda (kill-buffer nil)))
 
 ;; Top row keys
 (global-set-key (kbd "<XF86Back>")        (i-lambda (shell (switch-to-buffer  "*shell*")))) ;; the left arrow key next to ESC
