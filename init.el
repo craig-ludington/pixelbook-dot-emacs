@@ -61,5 +61,7 @@
 (load "key-bindings")
 (load "cbl")
 
-(setenv "SSH_AUTH_SOCK" "/tmp/ssh-MRJHWcMmz1ab/agent.2191")
-(setenv "SSH_AGENT_PID" "2192")
+(setenv "SSH_AUTH_SOCK" "/tmp/ssh-sIIMYId2AGPv/agent.771")
+(setenv "SSH_AGENT_PID" "772")
+
+(setenv "PATH" "~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/usr/games:/sbin:/bin")
