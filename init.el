@@ -21,8 +21,14 @@
      ("marmalade-repo" . "http://marmalade-repo.org/packages/"))))
  '(package-selected-packages
    (quote
-    (counsel-projectile inf-clojure switch-window zoom magit key-chord ido-vertical-mode paredit paredit-everywhere paredit-menu ace-jump-mode ido-ubiquitous clojure-mode-extra-font-locking cljsbuild-mode cider-browse-ns cider align-cljlet counsel-ebdb)))
+    (counsel ivy counsel-projectile inf-clojure switch-window zoom magit key-chord ido-vertical-mode paredit paredit-everywhere paredit-menu ace-jump-mode ido-ubiquitous clojure-mode-extra-font-locking cljsbuild-mode cider-browse-ns cider align-cljlet counsel-ebdb)))
  '(projectile-enable-caching t)
+ '(safe-local-variable-values
+   (quote
+    ((eval cider-register-cljs-repl-type
+	   (quote fm)
+	   "(require 'figwheel.main)(figwheel.main/start \"dev\")"
+	   (quote cider-verify-piggieback-is-present)))))
  '(visible-bell t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -45,6 +51,7 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (ido-mode)
+(projectile-mode 1)
 
 (add-hook 'clojure-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
